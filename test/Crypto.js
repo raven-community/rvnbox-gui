@@ -1,6 +1,6 @@
 let chai = require('chai');
 let assert = chai.assert;
-let RVNBOXCli = require('rvnbox-cli/lib/rvnboxcli').default;
+let RVNBOXCli = require('rvnbox/lib/rvnboxsdk').default;
 let rvnbox = new RVNBOXCli();
 
 describe('create SHA256Hash', () => {

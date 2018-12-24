@@ -2,7 +2,7 @@ import RavenCoin from '../src/utilities/RavenCoin';
 import chai from 'chai';
 let assert = chai.assert;
 let fixtures = require('./fixtures/RavenCoin.json')
-let RVNBOXCli = require('rvnbox-cli/lib/rvnboxcli').default;
+let RVNBOXCli = require('rvnbox/lib/rvnboxsdk').default;
 let rvnbox = new RVNBOXCli();
 
 describe('price conversion', () => {
