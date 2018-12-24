@@ -1,4 +1,4 @@
-let RVNBOXCli = require('rvnbox-cli/lib/rvnboxcli').default;
+let RVNBOXCli = require('rvnbox-sdk/lib/rvnbox-sdk').default;
 window.electron = require('electron');
 
 window.Store = require('electron-store');
