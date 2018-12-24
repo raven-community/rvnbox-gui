@@ -1,0 +1,444 @@
+@import 'themeColors';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.7em;
+  color: $lightGrey;
+  min-width: 1250px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  label {
+      color: $darkGrey;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .l-box {
+      padding: 1em;
+  }
+
+  .l-box-lrg {
+      padding: 2em;
+  }
+
+  .is-center {
+      text-align: center;
+  }
+
+  .pure-form label {
+      margin: 1em 0 0;
+      font-weight: bold;
+      font-size: 100%;
+  }
+
+  .pure-form input[type] {
+      border: 2px solid #ddd;
+      box-shadow: none;
+      font-size: 100%;
+      margin-bottom: 1em;
+  }
+
+  .pure-button {
+      color: $white;
+      padding: 0.5em 2em;
+      border-radius: 5px;
+  }
+
+  a.pure-button-primary {
+      background: $white;
+      color: $lightBlue;
+      border-radius: 5px;
+      font-size: 120%;
+  }
+
+  .pure-menu.pure-menu-fixed {
+      /* Fixed menus normally have a border at the bottom. */
+      border-bottom: none;
+      /* I need a higher z-index here because of the scroll-over effect. */
+      z-index: 4;
+  }
+
+  .content {
+    padding: 1em 1em 3em;
+  }
+
+  .content-head {
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+  }
+
+  .footer {
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .main-header {
+    background: $slate;
+
+    a {
+      color: $medBlue;
+    }
+
+    .networkInfo {
+      background: $medBlue;
+
+      a {
+        color: $slate;
+      }
+    }
+
+    .pure-menu-item {
+      a.pure-menu-link, a.pure-menu-link:hover {
+        background: none;
+      }
+
+      a.pure-menu-link.pure-menu-selected, a.pure-menu-link:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .pure-table {
+    width: 100%;
+    border: none;
+
+    tbody {
+      border-style: solid;
+      border-color: $slate;
+      border-width: 0 0 1px 0;
+
+      tr {
+        border-style: solid;
+        border-width: 1px 0 0 0;
+
+        td {
+          padding: 1em;
+          border: none;
+          line-height: 1.1em;
+          color: $slate;
+
+          .subheader {
+            font-size: 0.75em;
+            padding-bottom: 0;
+            color: $slate;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .pure-button {
+    background-color: $medBlue;
+  }
+
+  .danger-background {
+    background-color: $danger;
+  }
+
+  .main-header {
+    .pure-menu-horizontal {
+      padding: 1em 0;
+
+      svg {
+        font-size: 1.25em;
+      }
+    }
+
+    .pure-menu-horizontal.networkInfo {
+      padding: 1em 0;
+      color: #fff;
+      font-size: 0.75em;
+      line-height: 1.25em;
+
+      li {
+        padding-left: 1em;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .plus {
+    color: green;
+  }
+
+  .minus {
+    color: red;
+  }
+
+  .AccountTransactions, .AccountReceive, .AccountSend {
+    background: #eee;
+  }
+
+  .Account, .Blocks {
+    td {
+      padding: 1.25em 1em;
+    }
+
+    td.important {
+      font-size: 1.3em;
+
+      .subheader {
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  .Blocks td:first-of-type, .DetailsHeader td:first-of-type, .AccountDetails td.nextPage:first-of-type {
+    background-color: $medBlue;
+    color: $white;
+    text-align: center;
+    padding: 0.75em;
+    width: 5%;
+  }
+
+  .DetailsHeader, .AccountDetailsHeader {
+    .pure-table {
+      tr:first-of-type {
+        .subheader {
+          color: $white;
+        }
+
+        td {
+          font-size: 1.5em;
+        }
+
+        td:first-of-type:hover {
+          background-color: $danger;
+        }
+      }
+    }
+  }
+
+  .tableFormatting.pure-table {
+    font-size: 1em;
+
+    tr {
+      border: none;
+    }
+
+    tr:not(:first-of-type) {
+
+      td {
+        font-weight: normal;
+        font-size: 0.75em;
+        width: 20%;
+      }
+    }
+
+    tbody:last-of-type {
+      border: none;
+    }
+
+    tbody.txSummary {
+      border-width: 1px 0;
+      border-style: solid;
+      border-color: $slate ;
+    }
+
+    tbody.txSummary:hover {
+      background: #eee ;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    .coinbase {
+      background-color: $danger;
+    }
+  }
+
+  .nextPage {
+    cursor: pointer;
+  }
+
+  .label {
+    color: $white;
+    padding: 8px;
+  }
+
+  .success {
+    color: #4CAF50;
+  }
+
+  .info {
+    background-color: #2196F3;
+  }
+
+  .warning {
+    background-color: #ff9800;
+  }
+
+  .danger {
+    color: $danger;
+  }
+
+  .other {
+    background-color: #e7e7e7; color: black;
+  }
+
+  .breakWord {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100px;
+  }
+
+  .Convert, .Configuration {
+    input {
+      width: 100%;
+    }
+  }
+
+  .modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: $medBlue;
+    h2 {
+      color: white;
+    }
+  }
+
+  .modal-body {
+    padding: 2px 16px;
+    h3, h4 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+
+  .close {
+    color: $white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .importAndExportBtn {
+    border: none;
+    background: none;
+    color: $medBlue;
+  }
+
+  .importAndExportBtn:hover{
+    border: none;
+    background: none;
+  }
+
+  .importAndExportBtn:focus{
+    border: none;
+    background: none;
+  }
+
+  #keyImportAndExportModal {
+    .modal-body {
+
+      .ImportAndExport {
+        height: 400px;
+
+        textarea {
+          width: 100%;
+          height: 350px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .input-icon-wrap {
+    border: 1px solid $lightGrey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-icon {
+    background: $slate;
+    color: $medBlue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .input-with-icon {
+    background: $slate;
+    border: none;
+    flex: 1;
+    line-height: inherit;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 400px;
+  }
+
+  .input-icon, .input-with-icon {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 48em) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.pure-menu-heading.header-logo {
+  text-align: center;
+}
+
+.pure-menu-heading.header-logo img {
+  width: 50px;
+  margin-bottom: -10px;
+}

@@ -1,0 +1,47 @@
+@import 'themeColors';
+.AccountDetails {
+  .pure-menu.pure-menu-horizontal {
+    padding-bottom: 5px;
+
+    a.pure-menu-link:hover {
+      color: $medBlue;
+    }
+
+    a.pure-menu-link.pure-menu-selected {
+      color: $slate;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+    }
+  }
+
+  .account {
+    font-size: 1.75em;
+  }
+
+  .AccountDetailsHeader {
+    .subheader {
+      font-size: .8em;
+      margin-bottom: 0;
+    }
+
+    .balance {
+      margin: 10px 0;
+      color: black;
+      font-size: 1.75em;
+    }
+
+    .balance:first-of-type {
+      font-weight: bold;
+    }
+
+    .subbalance {
+      margin-top: 0;
+      color: $lightGrey;
+      font-size: 1em;
+    }
+
+    div {
+      padding: 1em 2em;
+    }
+  }
+}
