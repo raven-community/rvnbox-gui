@@ -151,7 +151,7 @@ class Miner {
   static mineBlock() {
     console.log('mining block')
 
-    let a = rvnbox.RavenCoin.address();
+    let a = rvnbox.Address();
     let script = rvnbox.Script;
     let ecpair = rvnbox.ECPair;
     let state = reduxStore.getState();

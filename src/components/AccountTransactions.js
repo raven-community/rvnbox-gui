@@ -30,7 +30,7 @@ class AccountTransactions extends Component {
       }} />)
     }
 
-    let a = rvnbox.RavenCoin.address();
+    let a = rvnbox.Address();
     let script = rvnbox.Script;
     let ecpair = rvnbox.ECPair;
     let blocks = [];
