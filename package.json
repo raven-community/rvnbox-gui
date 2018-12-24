@@ -36,7 +36,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "rvnaddrjs": "github:raven-community/rvnaddrjs#master",
-    "rvnbox-cli": "github:raven-community/rvnbox-cli#master",
+    "rvnbox-cli": "github:raven-community/rvnbox-javascript-sdk#master",
     "ravencoinjs-lib": "github:raven-community/ravencoinjs-lib#master",
     "ravencoinjs-message": "github:raven-community/ravencoinjs-message#master",
     "body-parser": "^1.18.2",
