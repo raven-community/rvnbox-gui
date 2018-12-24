@@ -97,7 +97,7 @@ class Server {
       decodedTx.txid = transaction.getId();
       decodedTx.size = transaction.byteLength();
       decodedTx.vsize = transaction.virtualSize();
-      let a = rvnbox.Address();
+      let a = rvnbox.Address;
       let script = rvnbox.Script;
       let ins = [];
       transaction.ins.forEach((input, index) => {
