@@ -329,53 +329,28 @@ class Server {
       res.setHeader('Content-Type', 'application/json');
 
       res.send(JSON.stringify({
-        "chain": "main",
-        "blocks": 464562,
-        "headers": 464562,
-        "bestblockhash": "00000000000000000085bd56990c579a36bade6ea427646612f13476edb30ceb",
-        "difficulty": 521974519553.6282,
-        "mediantime": 1493758169,
-        "verificationprogress": 0.999989733170878,
-        "chainwork": "00000000000000000000000000000000000000000052c26f32ffa22706efd28c",
-        "pruned": false,
-        "softforks": [
-          {
-            "id": "bip34",
-            "version": 2,
-            "reject": {
-              "status": true
-            }
+          "chain": "main",
+          "blocks": 510569,
+          "headers": 510569,
+          "bestblockhash": "000000000000c03312793e8dbff3a097cac603c198a24ec8e9a9ab560a57bb1d",
+          "difficulty": 55093.92169942019,
+          "difficulty_algorithm": "DGW-180",
+          "mediantime": 1545966513,
+          "verificationprogress": 0.9999981719906134,
+          "chainwork": "00000000000000000000000000000000000000000000000342ac45d188195760",
+          "size_on_disk": 3984383091,
+          "pruned": false,
+          "softforks": [
+          ],
+          "bip9_softforks": {
+              "assets": {
+                  "status": "active",
+                  "startTime": 1540944000,
+                  "timeout": 1572480000,
+                  "since": 435456
+              }
           },
-          {
-            "id": "bip66",
-            "version": 3,
-            "reject": {
-              "status": true
-            }
-          },
-          {
-            "id": "bip65",
-            "version": 4,
-            "reject": {
-              "status": true
-            }
-          }
-        ],
-        "bip9_softforks": {
-          "csv": {
-            "status": "active",
-            "startTime": 1462060800,
-            "timeout": 1493596800,
-            "since": 419328
-          },
-          "segwit": {
-            "status": "started",
-            "bit": 1,
-            "startTime": 1479168000,
-            "timeout": 1510704000,
-            "since": 439488
-          }
-        }
+          "warnings": ""
       }));
     });
 
@@ -409,18 +384,96 @@ class Server {
     server.post('/getchaintips', (req, res) => {
       res.setHeader('Content-Type', 'application/json');
       res.send(JSON.stringify([
-        {
-          "height": 518990,
-          "hash": "000000000000000002eafe2494f7dd1f678988217a12e8ab20d3594affd03392",
-          "branchlen": 0,
-          "status": "active"
-        },
-        {
-          "height": 518349,
-          "hash": "000000000000000001e349c5fbc653adcfd87c1a81c0ccc0e7443def968a54e6",
-          "branchlen": 1,
-          "status": "valid-headers"
-        }
+          {
+              "height": 510569,
+              "hash": "000000000000c03312793e8dbff3a097cac603c198a24ec8e9a9ab560a57bb1d",
+              "branchlen": 0,
+              "status": "active"
+          },
+          {
+              "height": 508027,
+              "hash": "0000000000013c04bf48fcab145ca26abd01713493fb19bf128a7d341ffdf9e0",
+              "branchlen": 1,
+              "status": "valid-fork"
+          },
+          {
+              "height": 507735,
+              "hash": "0000000000000135aabe8ba6adb803914d17438c5b10edcb8726fdc3b73c0255",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 506518,
+              "hash": "0000000000014f68cf5c972051474ccbb9960a51fabbd02aedbc9e5134fe8937",
+              "branchlen": 1,
+              "status": "valid-fork"
+          },
+          {
+              "height": 503654,
+              "hash": "000000000000076eaaae34ab3b17547db074c92e76ba80e76452fff7c5795dcb",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 502703,
+              "hash": "0000000000006a1dd1d9a4820c3c2fc9c3cf9911d60708563f7d6d078e41cfa5",
+              "branchlen": 1,
+              "status": "valid-fork"
+          },
+          {
+              "height": 502191,
+              "hash": "00000000000064e049af9cbd36f2bfbfd288aa7414821e03a443b0527f8a2cac",
+              "branchlen": 1,
+              "status": "valid-fork"
+          },
+          {
+              "height": 502163,
+              "hash": "000000000000567a3cfa57df7091c3698d0f10b5256b99b3e218bc305d82308b",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 501708,
+              "hash": "0000000000006cc1206d36e82915a8602e95fd58abc391c630fc68ef4ec2cfa7",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 500819,
+              "hash": "0000000000011cde5b3eb591af7479928784c9444818f179208a868813aaed8e",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 500382,
+              "hash": "0000000000004847dbb915cb689cb873da039e7b75943ba557719d5749233193",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 498910,
+              "hash": "0000000000007b3f7f068cf45b2a15d8d346ecb43f0a390970a1ee51d0e99026",
+              "branchlen": 1,
+              "status": "valid-headers"
+          },
+          {
+              "height": 496924,
+              "hash": "00000000000001760811ac69790383c047dee9feb781e9df175e1cfd58c09954",
+              "branchlen": 1,
+              "status": "valid-fork"
+          },
+          {
+              "height": 496512,
+              "hash": "000000000000ad5a1fd962401d09f81643ad4af89ffa47c5a7be8d0cfc11da0b",
+              "branchlen": 1,
+              "status": "valid-fork"
+          },
+          {
+              "height": 495346,
+              "hash": "000000000000193edb96ca23115d3e09b4fe3edee885360e5aef6a28d8914fc4",
+              "branchlen": 1,
+              "status": "valid-headers"
+          }
       ]));
     });
 
@@ -640,47 +693,44 @@ class Server {
     server.post('/getnetworkinfo', (req, res) => {
       res.setHeader('Content-Type', 'application/json');
 
-      res.send(JSON.stringify({
-        "version": 130100,
-        "subversion": "/Ravencoin ABC:0.16.2(EB8.0)/",
-        "protocolversion": 70014,
-        "localservices": "000000000000000d",
-        "localrelay": true,
-        "timeoffset": -19,
-        "connections": 8,
-        "networks": [
-          {
-            "name": "ipv4",
-            "limited": false,
-            "reachable": true,
-            "proxy": "",
-            "proxy_randomize_credentials": false
-          },
-          {
-            "name": "ipv6",
-            "limited": false,
-            "reachable": true,
-            "proxy": "",
-            "proxy_randomize_credentials": false
-          },
-          {
-            "name": "onion",
-            "limited": true,
-            "reachable": false,
-            "proxy": "",
-            "proxy_randomize_credentials": false
-          }
-        ],
-        "relayfee": 5000.00000000,
-        "localaddresses": [
-          {
-            "address": "0321:2c13::f03c:82ee:fe89:cec2",
-            "port": 8767,
-            "score": 4
-          }
-        ],
-        "warnings": ""
-      }));
+        res.send(JSON.stringify({
+            "version": 2020000,
+            "subversion": "/Ravencoin:2.2.0/",
+            "protocolversion": 70017,
+            "localservices": "000000000000000d",
+            "localrelay": true,
+            "timeoffset": 2,
+            "networkactive": true,
+            "connections": 8,
+            "networks": [
+                {
+                    "name": "ipv4",
+                    "limited": false,
+                    "reachable": true,
+                    "proxy": "",
+                    "proxy_randomize_credentials": false
+                },
+                {
+                    "name": "ipv6",
+                    "limited": false,
+                    "reachable": true,
+                    "proxy": "",
+                    "proxy_randomize_credentials": false
+                },
+                {
+                    "name": "onion",
+                    "limited": true,
+                    "reachable": false,
+                    "proxy": "",
+                    "proxy_randomize_credentials": false
+                }
+            ],
+            "relayfee": 0.00001000,
+            "incrementalfee": 0.00001000,
+            "localaddresses": [
+            ],
+            "warnings": ""
+        }));
     });
 
     server.post('/getnewaddress', (req, res) => {
@@ -750,61 +800,26 @@ class Server {
     server.post('/getrawmempool', (req, res) => {
       res.setHeader('Content-Type', 'application/json');
 
-      res.send(JSON.stringify([
-      '6d23328804d12b8fc9a7cacf41eee9272ac5648ef209deefffacba2c31d13375',
-      '6a0377bf00d68cf8a8623f9b7f43eecd7c26a2057184d93f208dd4a31923efb6',
-      '5fc6fbde91aaeab8feb4fd3f8c9c1da7d157a5368e759ed4dd349924aefebae1',
-      'e079e017b2766adf8bea6bd7f5d50c09069cfc9f1424e5c40974d04561bd3e6d',
-      '003fd0ee7178899ec845e3aa534eef47077734d731ced213871e7eb5b00d8a69',
-      'd524d2ce8982d8af9127fd1285c2a2a3aca88b3a3c46bab04db2a9aacfc4add5',
-      '96d1dc2412478b27d98fff2f4b87d15fb376c2422cb077380c0a5203d5228793',
-      '1a54518db78cd3533653828b918da3f566f5512b8a039d6f22972f67f87cf844',
-      'e0b1ea4287c6a2829300a150d56c319bc1f24b4966d2405e613c778de6751c5f',
-      'f366b36c74361af7d5d0ba24b0f1355e104c16fd9a8b5f38be52418125aeea9a',
-      'b496b4b01d9a0880c1b5e6278e843c38799a4fd2bb34e7a62a1a56f68a7300b5',
-      'd40ff3e30231a825345e9530ba854e53cc052f8e20610f92f9d964cf00954b14',
-      'f86e3c20649cc374ece1aeaaf6e9e20cc361b4ad7236af7af930643edb45d708',
-      '1c93544c126f9814d81c1e68146e24b7b1e286c3a03cf2e25e30f60c483d6063',
-      '0176fcaa8cdd90f6ecad9b37597290bbb5b1465a9041d796700865a2eb0fc2a9',
-      '771326755f3a15a38947ccaf1142d8928df2d3cde88641c7fedd2fb8a85b90cc',
-      '99c1efc61a96293cc26d6db6d35a29af0dae216d630a697e58bf6ab78eb5b59f',
-      '5d2adf9d822e56e5c308bffb37ce07992e6943c1ac900f783ff290942915afda',
-      'f3ca3a4771aedb68249be75f6e004c509bebdb0d532108e1b8c745790c7589b8',
-      '03d863b378fb088847138d6b5f9d022b0f99a679931eb23dd176a322c0e295ae',
-      'b22a6b9ba8d4a5122db6b6c79abd16a751ff85fd2958303ba2cfebe9bac280ac',
-      '5c746c206b631a87e3920ea7dc3378a710176bcf995f6b7e423a64f577b95398',
-      '2ee43bc6061341550bb19e2e0c6a700ce21bfd438a37cd3f3acfed65870fca81',
-      '1e0a1c06881f16a02c630f57989a6a9571ed90843057220ce20dbba656f8be76',
-      'b532b4679627ef49c5c28de91c762b59f8031a0033eec828b1f7fd3c134d3766',
-      '4a6a42c2153fa4a6a70de7f09fdee766d9ceeb7a6dbe1a1495a17529f6364533',
-      '4e975f1d36ff8779f0b54713bac96d851002cca16f3dab2a0819fe2b78651b2b',
-      '004a6661ba3f31797e0f868d9465f63ab1e0041d15756467ba7eaccfe49b261a',
-      'de856283ed5f9c39a5a89f6fb051b7ab23f740331874bf88973ba2d734374feb',
-      '9490b1dfa731baa7a22348d676edd73bb89930defe6942fe032330a72c567dd8',
-      '1a567bed7bb50a69c9d7c66335c0cf97ea2553389f51c241fb2278ba46e4191d',
-      '32fb9dd3be9b14ab33cbee95b6581e08ac1456398d1978dd960ec18e06c317e6',
-      'a26486de58c5a177925f8deb0f321830a083e545c8b6804dd77178a116ba3f13',
-      '60448fbeaf1a828b211fb826872ba33101f83cbbb8224a5c358975950bb5ef9e',
-      '43a77e7c4ac422a4bccca48af0cf00b3a12de0f733688afe7e6761a5a0d3b484',
-      '87a282d846d2da4ba0bd94ff1026e04b90b0394cb104dafb402ef1b2ccba438f',
-      'aa64c0a1524c50df79795da399a558140374f664bc84f75729d43f10c349216a',
-      '435370286caac236dc9c932d14d85de97211ae6b26b1bdf955e58b28d2713729',
-      'f5d2846674b0ee4afc9c1332c883f5a7d7474a235ee7eccc0b9b8121aa4bbbf0',
-      '3738c0057952171a38b9a4346273b34e73815a9e8c6e1a47c8775711415684a4',
-      '5201e0f597c7b84763678045daad7a044c86a8ee9c6de0279d498c1cbebc9196',
-      '1d735e242e76b69aa6c1b4c906196323b76f98a9680325419864239081c277e5',
-      '623ac97e2581ee9defaa5bef1869b1361cce4124189d80592d9497811f3aa14c',
-      '4dfb66bb6736635d4390608cf42fb6c2be618ce4a82f00a34d339631ee9a85b8',
-      'fbad10410a13231de058aa5a713b65356463a03a4693eb91513205f98b91b8f1',
-      'ac6a49017af73aa237e35319e5fb2a2989673f5dae30d866abe6456f2b5858ed',
-      'cdb53985b723edcad2ad111b264ae7289f5c21462dba305e334144bd70eaa2e1',
-      'c280ab5f909c9483ab9999c4c72040c8822fe1f49b769dc69190a8e98316d3a8',
-      'c3a2c58ca679fa73805b000c12589d00e7b1fbe92ee15fb1cf90be352c8fd865',
-      '755c9f91eeb95df7ce6eab1ac3a48c0d13f5f6ac5c8d90d3b6d47c131ec73614',
-      'f0048a1cc7bf365651b5905b30c174d4380187b168dbb96ee24194f74a72130d',
-      '605a0cdd75a67caf6c8d06c855c7d48828d8e4c0f145d764d3bc5d85a26ad904',
-      '7854ee4e9984c195e1a5f512e621df4be79f7274d2784030c2d94e37f215eb19'
-      ]));
+        res.send(JSON.stringify([
+            "68d199b7c8aa7a5fe9e7d7c7ee9c1bda9b9eb939058250cfeb625a6a92b07a9f",
+            "138bac03bde472bc2a1b09c7839e2e1accc621d28883a696331565f22c4edc6d",
+            "6c945a933b61f3a11835f84765048a0239dec7be4edea50a8547d728a9ed9929",
+            "63d0ef419a289649ba9c6b33b836e0f90ebe3ec3e5d591e7d10ca3cae187cf26",
+            "4a90d078a99a10facf6ab3d9699227a6992604992288b7067f2315d75dce771a",
+            "2e9c0d9a71fc2cbc9cc95c2d3502e8e477a11252273518ae7232803c8ab972e3",
+            "5e8d3829f2bb91a02da0cd85f5148525cfa022adc1cff3c31f99d892a72145c4",
+            "65cc716dd7effeec984f7ad6f66ad17430ea0f632667ee10de22c9049a9e3a62",
+            "d2f2ec5be0b33581ab41bdaa2f620605d53d12cd263100f2465097f5acc50029",
+            "8c72b81cfacd5f95fd2d602f5272300b236acabbee0f11c857180c82d469ee94",
+            "d242498795dcc99474a1da809e1c0f661ca566090c0e4a3999ba12e51c40caa4",
+            "aa40e6280286618790dee77022eb42b2b9467fdb20081ede4cc70669d42a6489",
+            "f56f1fbceebdf7b1ada7e6676b9bf3c1ef19089351ad97a7a907c147fce814df",
+            "1c92b9c67f0e6d114770519bb91320864ed24b0cda3f9ceea1576b6e14b557b6",
+            "9dea948c467d1853013bb16b2bcf87e3d6cf103d0263792a146ebec14c54ed56",
+            "cfcf927e464e91da82ed41725619ba84912eb8d8af49478b0decf2275b59d047",
+            "d28f01ed0af41ed2ab9a1f005e1fc2fec803acbec8af56192e3d706404749b87",
+            "9435ad09aa055eaa1139206d4e9df137b33ca9672145706aa252bf1099f6607e"
+        ]));
     });
 
     server.post('/getrawtransaction', (req, res) => {

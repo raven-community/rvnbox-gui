@@ -135,7 +135,7 @@ class Miner {
     let scriptSig = Buffer.from(rvnbox.Crypto.sha256('#RVNForEveryone'), 'hex');
     tx.addInput(txHash, 4294967295, 4294967295, scriptSig)
 
-    let value = rvnbox.RavenCoin.toSatoshi(12.5);
+    let value = rvnbox.RavenCoin.toSatoshi(5000);
     let address = account1.addresses.getChainAddress(0);
     let scriptPubKey = baddress.toOutputScript(address);
     tx.addOutput(scriptPubKey, value)

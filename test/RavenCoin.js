@@ -7,15 +7,15 @@ let rvnbox = new RVNBOXCli();
 
 describe('price conversion', () => {
   it('should convert Ravencoin to Satoshis', () => {
-    let ravencoin = 12.5;
+    let ravencoin = 5000;
     let satoshis = rvnbox.RavenCoin.toSatoshi(ravencoin);
-    assert.equal(satoshis, 1250000000);
+      assert.equal(satoshis, 500000000000);
   });
 
   it('should convert Satoshis to Ravencoin', () => {
-    let satoshis = 1250000000;
+      let satoshis = 500000000000;
     let ravencoin = rvnbox.RavenCoin.toRavencoin(satoshis);
-    assert.equal(ravencoin, 12.5);
+    assert.equal(ravencoin, 5000);
   });
 });
 
