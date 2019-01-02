@@ -6,7 +6,7 @@ Quickly fire up a personal Ravencoin blockchain which you can use to execute com
 
 Inpired by [ganache](http://truffleframework.com/ganache/).
 
-More info: https://developer.ravencoin.online/gui
+More info: http://developer.ravencoin.online/gui
 
 ## Setup
 
@@ -17,4 +17,4 @@ More info: https://developer.ravencoin.online/gui
 5. `npm test`
 6. `npm start`
 
-Or download the app from [https://developer.ravencoin.online/gui](https://developer.ravencoin.online/gui).
+Or download the app from [http://developer.ravencoin.online/gui](http://developer.ravencoin.online/gui).
