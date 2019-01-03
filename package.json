@@ -1,5 +1,5 @@
 {
-  "name": "RVNBOX-GUI",
+  "name": "rvnbox-gui",
   "version": "1.0.0",
   "description": "A development framework for Ravencoin",
   "main": "main.js",
