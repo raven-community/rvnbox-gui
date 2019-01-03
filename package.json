@@ -17,7 +17,9 @@
     "quick",
     "start",
     "tutorial",
-    "demo"
+    "demo",
+    "ravencoin",
+    "rvnbot-gui"
   ],
   "author": "MSFTserver",
   "license": "MIT",
@@ -35,10 +37,10 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
-    "rvnaddrjs": "github:raven-community/rvnaddrjs#master",
-    "rvnbox-sdk": "github:raven-community/rvnbox-javascript-sdk#master",
+    "rvnaddrjs": "^1.0.0",
+    "rvnbox-sdk": "^1.0.0",
     "ravencoinjs-lib": "github:raven-community/ravencoinjs-lib#master",
-    "ravencoinjs-message": "github:raven-community/ravencoinjs-message#master",
+    "ravencoinjs-message": "^1.0.0",
     "body-parser": "^1.18.2",
     "chai": "^4.1.2",
     "cors": "^2.8.4",
@@ -62,7 +64,7 @@
     "react-toggle": "^4.0.2",
     "redux": "^3.7.2",
     "sass-loader": "^6.0.6",
-    "satoshi-ravencoin": "github:raven-community/satoshi-ravencoin#master",
+    "satoshi-ravencoin": "^1.0.0",
     "style-loader": "^0.20.1",
     "underscore": "^1.8.3",
     "webpack": "^3.10.0"
