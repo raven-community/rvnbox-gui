@@ -1,8 +1,8 @@
 import Address from '../models/Address';
 
 import Ravencoin from 'ravencoinjs-lib';
-let RVNBOXCli = require('rvnbox-sdk/lib/rvnbox-sdk').default;
-let rvnbox = new RVNBOXCli();
+let RVNBOXSDK = require('rvnbox-sdk/lib/rvnbox-sdk').default;
+let rvnbox = new RVNBOXSDK();
 import underscore from 'underscore';
 
 class RavenCoin {

@@ -1,7 +1,7 @@
 let chai = require('chai');
 let assert = chai.assert;
-let RVNBOXCli = require('rvnbox-sdk/lib/rvnbox-sdk').default;
-let rvnbox = new RVNBOXCli();
+let RVNBOXSDK = require('rvnbox-sdk/lib/rvnbox-sdk').default;
+let rvnbox = new RVNBOXSDK();
 
 describe('create SHA256Hash', () => {
   it('should create a SHA256Hash hex encoded', () => {

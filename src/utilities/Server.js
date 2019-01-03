@@ -9,8 +9,8 @@ import cors from 'cors';
 
 import axios from 'axios';
 import bodyParser from 'body-parser';
-let RVNBOXCli = require('rvnbox-sdk/lib/rvnbox-sdk').default;
-let rvnbox = new RVNBOXCli();
+let RVNBOXSDK = require('rvnbox-sdk/lib/rvnbox-sdk').default;
+let rvnbox = new RVNBOXSDK();
 import underscore from 'underscore';
 
 class Server {
