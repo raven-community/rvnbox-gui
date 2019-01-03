@@ -1,6 +1,6 @@
 {
   "name": "rvnbox-gui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A development framework for Ravencoin",
   "main": "main.js",
   "productName": "RVNBOX GUI",
@@ -38,7 +38,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "rvnaddrjs": "^1.0.0",
-    "rvnbox-sdk": "^1.0.0",
+    "rvnbox-sdk": "^1.0.2",
     "ravencoinjs-lib": "github:raven-community/ravencoinjs-lib#master",
     "ravencoinjs-message": "^1.0.0",
     "body-parser": "^1.18.2",
