@@ -38,7 +38,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "rvnaddrjs": "^1.0.0",
-    "rvnbox-sdk": "^1.0.3",
+    "rvnbox-sdk": "^1.0.4",
     "ravencoinjs-lib": "github:raven-community/ravencoinjs-lib#master",
     "ravencoinjs-message": "^1.0.2",
     "body-parser": "^1.18.2",
